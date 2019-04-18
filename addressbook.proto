@@ -1,0 +1,25 @@
+syntax="proto3";
+package main;
+
+message Person{
+    string name =1;
+    int32 age = 2;
+    string emailID = 3;
+
+    enum PhoneType{
+        WORK = 0;
+        HOME = 1;
+        MOBILE = 2;
+    }
+    message PhoneNumber {
+        string number = 4;
+        PhoneType type = 5;
+    }
+
+}
+
+message AddressBook{
+    repeated Person people = 1;
+}
+
+

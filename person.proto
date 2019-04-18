@@ -1,0 +1,13 @@
+syntax="proto3";
+package main;
+
+message BMC{
+    int32 height = 1;
+    int32 weight = 2;
+}
+
+message Person{
+    string name = 1;
+    int32 age = 2;
+    BMC bmc = 3;
+}
